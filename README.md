@@ -124,7 +124,7 @@ sudo systemctl start Jenkins
 
 8. get access to jenkisn UI
 
-9. open url in browser http://13.63.241.244:8080/
+9. open url in browser http://13.63.15.244:8080/
 
 10. ulock jenkins by giving the key obtained from the command below
 
@@ -317,7 +317,7 @@ select settings
 
 select webhooks
 
-payload URL (http://3.87.133.37:8080)
+payload URL (http://13.63.15.244:8080)
 
 conent type: application/json
 
