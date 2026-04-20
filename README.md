@@ -169,6 +169,7 @@ select settings
 select webhooks
 payload URL (http://3.87.133.37:8080)
 conent type: application/json
+update webhook
 
 
 
