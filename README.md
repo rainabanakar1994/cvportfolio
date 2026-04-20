@@ -167,7 +167,8 @@ Webhooks
 go to github repository
 select settings
 select webhooks
-give the jenkins URL ()
+payload URL (http://3.87.133.37:8080)
+conent type: application/json
 
 
 
