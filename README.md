@@ -1,7 +1,11 @@
 Step 1:
+
 Virtual environment AWS
+
 =================================================
+
 go to EC2
+
 click on EC2 launch instance 
 
 Name the Instance 
@@ -19,11 +23,13 @@ under security tab add the inbound rule to all trafic all port
 and connect the instance
 
 =================================================
+
 Step 2:
 
 Install Docker
 
 =================================================
+
 sudo yum update -y
 
 1. install docker
@@ -47,11 +53,13 @@ docker login
 sudo systemctl start docker
 
 =================================================
+
 Step 3: 
 
 Install Nginx
 
 =================================================
+
 docker search nginx
 
 pull nginx image from docker
@@ -59,11 +67,13 @@ pull nginx image from docker
 docker pull nginx
 
 =================================================
+
 Step 4:
 
 Install Git
 
 =================================================
+
 sudo yum install git -y
 
 git –version
@@ -73,11 +83,13 @@ git config --global user.name "rainabanakar1994"
 git config --global user.email “rainabanakar7@gmail.com”
 
 =================================================
+
 step 5:
 
 Install Jenkins:
 
 =================================================
+
 1. Add jenkisn repo
 
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/rpm-stable/jenkins.repo
@@ -143,11 +155,13 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 23. under setting select credentials and give docker credentials 
 
 =================================================
+
 step 6:
 
 Install Kubernetes
 
 ==================================================
+
 1. Install Kubectl
 
 curl -LO https://dl.k8s.io/release/v1.30.1/bin/linux/amd64/kubectl
@@ -173,11 +187,14 @@ minikube start --driver=docker
 kubectl get pods
 
 ==================================================
+
+
 step 7:
 
 kube config to access Jenkins – access permissions
 
 ==================================================
+
 
 sudo mkdir -p /var/lib/jenkins/.kube
 
@@ -227,11 +244,13 @@ Replace with     server: https://127.0.0.1:32769
 kubectl --kubeconfig=kubeconfig-jenkins.yaml get nodes
 
 ==================================================
+
 Step 8:
 
 create index.html
 
 ==================================================
+
 create a new directory
 
 then go inside the directory
