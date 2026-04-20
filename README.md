@@ -321,6 +321,16 @@ conent type: application/json
 
 update webhook
 
+make changes in index.html and push 
+
+this autobuilds in jenkins 
+
+[ec2-user@ip-172-31-43-41 ~]$ kubectl port-forward svc/cvportfolio-service 8081:8081 --address 0.0.0.0 
+
+test a URL
+
+
+
 
 
 
