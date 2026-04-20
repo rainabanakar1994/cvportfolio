@@ -268,11 +268,13 @@ create k8s folder insde this directory
 create deployment.yaml and service.yaml
 
 ==================================================
+
 Step 9:
 
 create index.html
 
 ==================================================
+
 login to github
 
 create a repo (dev and main)
@@ -286,11 +288,13 @@ git commit
 git push -u origin develop 
 
 ==================================================
+
 Step 10:
 
 start minikube
 
 ==================================================
+
 minikube start --driver=docker
 
 under jenkins pipeline build a pipeline
@@ -298,11 +302,13 @@ under jenkins pipeline build a pipeline
 if the build is succesful add webhooks in github
 
 ==================================================
+
 Step 11:
 
 Webhooks
 
 ==================================================
+
 go to github repository
 
 select settings
